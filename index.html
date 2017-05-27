@@ -1,0 +1,110 @@
+<!DOCTYPE>
+
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery-1.12.2.min.js"></script>
+<script src="typed.js"></script>
+
+</head>
+
+<body>
+
+	<button onclick="playAudio();startTimer();"> click here to play audio</button>
+
+<p id="line1" style="color:white;font-size:100%;"></p>
+<p id="line2" style="color:white;font-size:100%;"></p>
+<p id="line3" style="color:white;font-size:100%;"> </p>
+<p id="line4" style="color:white;font-size:200%;"> </p>
+
+	
+  <!-- <input id="btn" type="button" value="PLAY" onclick="playAudio(); setTimeout();"/> -->
+ 		<audio controls id="myAudio">
+		<source src="audio.wav" type="audio/wav">
+		</audio>
+
+		<script>
+		var a=document.getElementById("myAudio");
+		
+		
+
+		function playAudio(){
+			a.play();			
+
+		}
+
+		var myVar;
+
+function startTimer() {
+    	myVar = setTimeout(function(){ alertFunc("line1", "The number of victims of the civil war in Syria reached 250,000 by 2015"); }, 114000);
+    	 myVar = setTimeout(function(){ alertFunc1("line2","8,823 women"); }, 122000);
+     	myVar = setTimeout(function(){ alertFunc2("line3","13,694 children"); }, 125000);
+    	 myVar = setTimeout(function(){ alertFunc3("line4","MAKE LOVE, NOT WAR"); }, 130000);
+
+
+}
+
+function alertFunc(line, text) {
+	console.log(text);
+	$("#" + line).typed({
+        strings: [text],
+        typeSpeed: 60
+      });
+}
+
+function alertFunc1(line, text) {
+	console.log(text);
+	$("#" + line).typed({
+        strings: [text],
+        typeSpeed: 60
+      });
+}
+
+function alertFunc2(line, text) {
+	console.log(text);
+	$("#" + line).typed({
+        strings: [text],
+        typeSpeed: 60
+      });
+}
+
+function alertFunc3(line, text) {
+	console.log(text);
+	$("#" + line ).typed({
+        strings: [text],
+        typeSpeed: 60
+      });
+}
+
+
+// function alertFunc() {
+//     document.getElementById("line1").innerHTML += "the number of victims of the civil war in Syria reached 250,000 by 2015";
+
+// }
+
+// function alertFunc1() {
+
+//     document.getElementById("line2").innerHTML += "8,823 women";
+
+// }
+
+// function alertFunc2(){
+
+//     document.getElementById("line3").innerHTML += "13,694 children";
+
+
+// }
+
+// function alertFunc3(){
+
+//     document.getElementById("line4").innerHTML += "MAKE LOVE, NOT WAR";
+// }
+
+// number of drops created.
+
+
+		</script>
+
+
+</body>
